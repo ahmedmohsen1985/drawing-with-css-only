@@ -1,0 +1,229 @@
+body{
+    margin:0;
+    padding:0
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background: #f0f0f0;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 16px 16px 10px #d7d7d7
+}
+.face{
+    width: 320px;
+    height: 300px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+.face::after{
+    content: "";
+    width: 200px;
+    height: 170px;
+    border-radius: 50%;
+    position: absolute;
+    top: -110px;
+    left: -70px;
+    background: #000;
+    transform: rotate(-40deg);
+}
+.face::before{
+    content: "";
+    width: 200px;
+    height: 170px;
+    border-radius: 50%;
+    position: absolute;
+    top: -110px;
+    right: -70px;
+    background: #000;
+    transform: rotate(40deg);
+}
+.eye-skin-left{
+    width: 130px;
+    height: 230px;
+    background: #ffc8ad;
+    border-radius: 50%;
+    position: absolute;
+    left: 49px;
+    top: 20px;
+    transform: rotate(4deg);
+    z-index: 2;
+}
+.eye-skin-right{
+    width: 130px;
+    height: 230px;
+    background: #ffc8ad;
+    border-radius: 50%;
+    position: absolute;
+    right: 49px;
+    top: 20px;
+    transform: rotate(-4deg);
+}
+.Mouth{
+    background-color: #ffc8ad;
+    width: 323px;
+    height: 100px;
+    bottom: 5px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 150px;
+    border: 5px solid #000;
+    border-top: 0;
+}
+.eye-1{
+    background: #fff;
+    height: 100px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    left: 100px;
+    bottom: 120px;
+    z-index: 9;
+    transform: rotate(-2deg);
+}
+.eye-1::before{
+    content: '';
+    background: #000;
+    width: 20px;
+    height: 44px;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 50%;
+    right: 1px;
+    transform: rotate(13deg);
+}
+.eye-2{
+    background: #fff;
+    height: 100px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+    z-index: 9;
+    transform: rotate(2deg);
+}
+.eye-2::before{
+    content: '';
+    background: #000;
+    width: 20px;
+    height: 44px;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 50%;
+    left: 1px;
+    transform: rotate(-13deg);
+}
+.eye-shadow{
+    width: 100px;
+    height: 30px;
+    background: #ffc8ad;
+    border-top: 3px solid #000;
+    position: absolute;
+    top: 167px;
+    left: 110px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+
+.nose{
+    width: 100px;
+    height: 60px;
+    background: #000;
+    position: absolute;
+    top: 327px;
+    left: 201px;
+    border-radius: 50%;
+    z-index: 20;
+    transform: rotate(-2deg);
+}
+.Mouth-2{
+    height: 89px;
+    width: 200px;
+    border-bottom: 8px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 20;
+    left: 145px;
+    bottom: 77px;
+}
+.Mouth-2::before{
+    content: '';
+    border-right: 3px solid #000;
+    width: 26px;
+    height: 33px;
+    position: absolute;
+    bottom: 13px;
+    border-radius: 50%;
+    right: -4px;
+    transform: rotate(-36deg);
+}
+.Mouth-2::after{
+    content: '';
+    border-left: 3px solid #000;
+    width: 26px;
+    height: 33px;
+    position: absolute;
+    bottom: 13px;
+    border-radius: 50%;
+    left: -4px;
+    transform: rotate(34deg);
+}
+.Mouth-3{
+    height: 50px;
+    width: 91px;
+    border-radius: 0 0 52px 52px;
+    position: absolute;
+    z-index: 19;
+    left: 199px;
+    bottom: 29px;
+    background: #ffc8ad;
+    border: 3px solid #000;
+    border-left: 0;
+    border-right: 0;
+}
+.Mouth-3::before{
+    content: '';
+    height: 45px;
+    width: 83px;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    z-index: 20;
+    left: 4px;
+    bottom: 6px;
+    background: #000;
+}
+.Mouth-3::after{
+    content: '';
+    height: 38px;
+    width: 60px;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    z-index: 20;
+    left: 15px;
+    bottom: 12px;
+    background: brown;
+}
+.Mouth-tunnel{
+    width: 5px;
+    height: 26px;
+    position: absolute;
+    z-index: 30;
+    left: 41px;
+    border-left: 2px solid rgb(0 0 0 / 35%);
+    border-radius: 50%;
+    bottom: 27px;
+    transform: rotate(174deg);
+}
